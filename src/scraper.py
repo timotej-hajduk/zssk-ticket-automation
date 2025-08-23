@@ -92,5 +92,8 @@ def try_buy_ticket(start_station: TrainStationInfo, end_station: TrainStationInf
                 buy_ticket_button.click()
 
                 page.locator('[data-cy="ageCategory-0"] .btn-select-arrow.fa-angle-down').click()
-                page.locator('[data-cy="ageCategoryList-0"] li', has_text="Mladý  16 - 25 r.").click()
+                page.locator('[data-cy="ageCategoryList-0"] li:text("Mladý  16 - 25 r.")').click()
+                page.locator('[data-cy="discountType-0"] .btn-select-arrow.fa-angle-down').click()
+                page.locator('[data-cy="discountTypeList-0"] li:text-is("Preukaz pre žiaka/študenta")').click()
+                page.click("#actionIndividualContinue")
                 print()
