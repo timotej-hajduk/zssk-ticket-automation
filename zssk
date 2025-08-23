@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# For all zssk-ticket-automation users, this script is a wrapper around the CLI executable
+
+# Use the absolute path of this script directory, or the Jupyter notebooks will not work properly
+DIR=$(dirname "$(realpath $0)")
+
+PYTHONPATH="${DIR}/src" python src/main.py "$@"
