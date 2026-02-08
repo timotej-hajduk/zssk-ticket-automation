@@ -1,4 +1,7 @@
-from scraper import get_train_stations, try_buy_ticket
+from zssk_ticket_automation.scraper import (
+    get_train_stations,
+    try_buy_ticket,
+)
 
 
 def main(start_station: str, end_station: str):
@@ -8,4 +11,5 @@ def main(start_station: str, end_station: str):
 
 
 if __name__ == "__main__":
-    main("Bratislava hl. st.", "Košice")
+    # main("Bratislava hl. st.", "Košice")
+    print()
